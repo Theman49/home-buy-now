@@ -1,0 +1,92 @@
+/* 
+signup 
+*/
+
+.signup, .login {
+    box-shadow: 5px 8px 10px #333;
+    vertical-align: middle;
+    margin: 50px auto;
+    max-width: 800px;
+    transition: ease 2s;
+}
+
+.myFormLogin {
+    padding: 100px 30px;
+    background-color: #f5f4f4;
+    transition: linear 1s;
+}
+
+.status {
+    background-color: #cae4db;
+    color: #000;
+    transition: linear 1s;
+    padding: 150px 0px;
+}
+.status h1 {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 10px;
+    font-size: 5em;
+    margin-bottom: 40px;
+}
+
+.myForm {
+    padding: 30px 40px;
+    background-color: #f5f4f4;
+    transition: linear 1s;
+}
+
+
+.changeTo {
+    color: #0d6efd;
+    cursor: pointer;
+}
+
+#seller {
+    display: none;
+}
+
+@keyframes toggle {
+    0% {opacity: 1;}
+    50% {opacity: 0.3;}
+    100% {opacity: 0;}
+}
+
+.toggle {
+    animation: toggle 0.75s;
+}
+
+@media screen and (max-width: 500px){
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    .status {
+        display: none;
+        
+    }
+    .signup, .login {
+        font-size: 0.75rem;
+    }
+
+    .myForm {
+        padding: 10px 30px;
+    }
+
+    .linker {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .signup, .login {
+        font-size: 0.75rem;
+    }
+
+    .myForm {
+        padding: 10px 20px;
+    }
+
+    .myFormLogin {
+        padding: 10px 20px;
+    }
+}

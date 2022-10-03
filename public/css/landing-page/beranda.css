@@ -1,0 +1,143 @@
+* {
+    font-family: 'Poppins';
+}
+#header {
+    background: url('/img/banner-dmprolinks.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;    
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+}
+
+#header h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.6rem;
+    line-height: 8.4rem;
+}
+
+#header .car {
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    width: 100%;
+    height: 20vh;
+}
+
+@keyframes moving {
+    0%{
+        right: -20%;
+    }
+    100%{
+        right: 110%;
+    }
+}
+
+#header #car1,
+#header #car2 {
+    position: absolute;
+    right: 0;
+}
+#header #car1{
+    height: 50px;
+    bottom: 3.5px;
+    animation: moving 5s linear 0s infinite;
+}
+#header #car2 {
+    right: -20%;
+    height: 70px;
+    bottom: -3px;
+    animation: moving 10s linear 3s infinite;
+}
+
+#header #text-banner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#header #logo img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 15%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 425px){
+#header {
+    height: auto;
+    min-height: 50vh;
+}
+#header h1{
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    margin-bottom: 10rem;
+}
+#header #car1{
+    height: 30px;
+    bottom: 3.5px;
+    animation: moving 5s linear 0s infinite;
+}
+#header #car2 {
+    right: -30%;
+    height: 40px;
+    bottom: -3px;
+    animation: moving 10s linear 3s infinite;
+}
+
+#header #text-banner {
+    font-size: 22px;
+}
+
+#header #logo img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    height: auto;
+}
+
+}
+
+#content {
+    margin-top: 5rem;
+}
+
+#content h1 {
+    font-weight: 600;
+}
+
+#content > div.row p,
+#content > div.row a {
+    font-size: 1.6rem;
+    color: #8D8E97;
+}
+
+#content > div.row p {
+    width: 50%;
+}
+#content > div.row a {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 425px){
+    #content {
+        text-align: center;
+    }
+
+    #content > div.row p{
+        width: 100%;
+    }
+    #content > div.row a {
+        width: 50%;
+        margin-top: 1rem;
+    }
+}

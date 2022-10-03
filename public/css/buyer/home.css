@@ -1,0 +1,174 @@
+
+.grid-container {
+    padding: 2.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+
+
+.card {
+    overflow: hidden;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+}
+.card .cover {
+    position: relative;
+}
+.card .cover:hover {
+    cursor: pointer;
+}
+.card .cover > div:first-child {
+    transition: all ease-in-out .5s;
+}
+.card .cover:hover > div:first-child {
+    filter: blur(3px) brightness(1.5);
+}
+.card .cover a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out .5s;
+}
+.card .cover:hover a {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .cover img{
+    width: 100%;
+    height: 250px;
+    filter: brightness(.8);
+}
+
+.card .cover .title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.card .cover .title p {
+    padding: 4px 8px;
+    border-radius: 2px;
+}
+
+.card .cover .title .tipe-rumah {
+    background-color: #1AA5FA;
+}
+.card .cover .title .nego {
+    background-color: #09B010;
+    margin-left: 10px;
+}
+
+.card .text {
+    padding: 20px;
+}
+
+.card .text img {
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+}
+
+.card .text .harga {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1AA5FA;
+}
+
+.card .text .harga > span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8D8E97;
+}
+
+.card p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
+/* DETAIL */
+
+.back {
+    margin-bottom: 30px;
+}
+
+#carouselImage {
+    background-color: #000;
+    width: 100%;
+}
+
+#carouselImage img{
+    height: 400px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    transition: none;
+}
+
+
+
+/* .navigation {
+    margin-top: 30px;
+} */
+
+@media screen and (max-width: 425px){
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2.5rem 1rem;
+    }
+    #carouselImage {
+        width: 100%;
+    }
+    #carouselImage img{
+        height: 300px;
+    }
+    
+}
+
+/* Details */
+.path {
+    font-size: 1.6rem;
+}
+
+.path a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+.location {
+    font-size: 1.4rem;
+}
+
+.description p,
+#description-text {
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+.description .text-center p {
+    font-size: 1.2rem;
+}
+
+
+
+/* image wa */
+button > img {
+    width: 20px;
+    height: 20px;
+}

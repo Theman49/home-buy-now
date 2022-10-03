@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#page {
+    background: url('/img/background-header-beranda.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#page h1{
+    color: #fff;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.6rem;
+    line-height: 8.4rem;
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+
+#page .car {
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    width: 100%;
+    height: 20vh;
+}
+
+@keyframes moving {
+    0%{
+        right: -20%;
+    }
+    100%{
+        right: 110%;
+    }
+}
+
+#page #car1,
+#page #car2 {
+    position: absolute;
+    right: 0;
+}
+#page #car1{
+    height: 50px;
+    bottom: 3.5px;
+    animation: moving 5s linear 0s infinite;
+}
+#page #car2 {
+    right: -20%;
+    height: 70px;
+    bottom: -3px;
+    animation: moving 10s linear 3s infinite;
+}
+
+@media screen and (max-width: 425px){
+#page h1{
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    margin-top: 45vh;
+}
+#page #car1{
+    height: 30px;
+    bottom: 3.5px;
+    animation: moving 5s linear 0s infinite;
+}
+#page #car2 {
+    right: -30%;
+    height: 40px;
+    bottom: -3px;
+    animation: moving 10s linear 3s infinite;
+}
+
+}

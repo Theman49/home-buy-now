@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+p {margin-bottom: 0;}
+
+footer {
+    margin-top: 30px;
+}
+
+
+
+.color-light-blue-1 {
+    color: #1AA5FA;
+}
+.bg-light-blue-1 {
+    background-color: #1AA5FA;
+}
+
+.bg-light-green-1 {
+    background-color: #40C351;
+}
+.color-light-green-1 {
+    color: #40C351;
+}

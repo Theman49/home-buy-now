@@ -1,0 +1,26 @@
+#navbar {
+    width: 100%;
+    /*margin-bottom: 5rem;*/
+}
+
+#navbar #brand {
+    width: 10%;
+    margin-right: 25px;
+}
+#navbar a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+#navbar a.active {
+    color: #1AA5FA;;
+    border-bottom: 1px solid #1AA5FA;
+}
+
+@media screen and (max-width: 425px){
+    #navbar #brand {
+        width: 25%;
+    }
+}
