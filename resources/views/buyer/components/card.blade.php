@@ -14,9 +14,9 @@
         ?>
         <div>
             @if($url)
-                <img src="{{ asset('/storage/public/'.$url) }}" alt="">
+                <img loading="lazy" src="{{ asset('/storage/public/'.$url) }}" alt="">
             @else
-                <img src="{{ asset('/img/default.jpg') }}" alt="">
+                <img loading="lazy" src="{{ asset('/img/default.jpg') }}" alt="">
             @endif
             <div class="title text-white d-flex">
                 <p class="tipe-rumah"><b>{{ $item->jenis_rumah }}</b></p>
@@ -32,32 +32,32 @@
     <div class="text">
         <div class="row mb-4">
                 <div class="d-flex align-items-center mb-2">
-                    <img src="/img/lokasi.png" alt="">
+                    <img loading="lazy" src="/img/lokasi.png" alt="">
                     <p>{{ $item->nama_lokasi }}</p>
                 </div>
                 <h3 class="text-start">{{ $item->nama_object }}</h3>
         </div>
         <div class="row mb-3">
             <div class="col-4 d-flex align-items-center">
-                <img src="/img/luas_tanah.png" alt="">
+                <img loading="lazy" src="/img/luas_tanah.png" alt="">
                 <p>{{ $item->luas_tanah }} m<sup>2</sup></p>
             </div>
             <div class="col-4 d-flex align-items-center">
-                <img src="/img/luas_bangunan.png" alt="">
+                <img loading="lazy" src="/img/luas_bangunan.png" alt="">
                 <p>{{ $item->luas_bangunan }} m<sup>2</sup></p>
             </div>
         </div>
         <div class="row mb-4">
             <div class="col-4 d-flex align-items-center">
-                <img src="/img/jumlah_lantai.png" alt="">
+                <img loading="lazy" src="/img/jumlah_lantai.png" alt="">
                 <p>{{ $item->jumlah_lantai }} Lt</p>
             </div>
             <div class="col-4 d-flex align-items-center">
-                <img src="/img/kamar_tidur.png" alt="">
+                <img loading="lazy" src="/img/kamar_tidur.png" alt="">
                 <p>{{ $item->jumlah_kamar_tidur }} KT</p>
             </div>
             <div class="col-4 d-flex align-items-center">
-                <img src="/img/kamar_mandi.png" alt="">
+                <img loading="lazy" src="/img/kamar_mandi.png" alt="">
                 <p>{{ $item->jumlah_kamar_mandi }} KM</p>
             </div>
         </div>
